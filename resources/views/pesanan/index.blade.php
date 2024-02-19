@@ -7,8 +7,8 @@
             {{ $message }}
         </div>
     @endif
-    <div class="rounded-lg overflow-x-hidden overflow-y-scroll max-h-96 no-scrollbar mb-24 w-10/12 md:w-auto">
-        <table class="w-full text-left h-12 text-sm md:text-base">
+    <div class="rounded-lg overflow-x-hidden overflow-y-scroll max-h-100 no-scrollbar mb-24 w-10/12 md:w-auto">
+        <table id="pesananTable" class="w-full min-w-[600px] text-left h-full text-sm md:text-base">
             <thead class="bg-[#cdeaff] sticky top-0">
                 <tr>
                     <th class="p-3">Id Pemesan</th>
@@ -37,7 +37,7 @@
                             @endif
                         </td>
                         <td class="p-3 border-b">
-                            <a href="{{ route('pesanan.edit', $pesanan->id) }}" type="button"
+                            <a href="{{ route('pesanan.edit', $pesanan->id_pesanan) }}" type="button"
                                 class="bg-themeBlue/60 text-white px-4 py-2 rounded">Urus</a>
                         </td>
                     </tr>
@@ -45,4 +45,14 @@
             </tbody>
         </table>
     </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('#pesananTable').DataTable();            
+        });
+    </script>
 @stop

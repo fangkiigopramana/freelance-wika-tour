@@ -13,10 +13,10 @@ class PesananSeeder extends Seeder
      */
     public function run(): void
     {
-        for ($i = 0; $i < 20; $i++) {
+        for ($i = 0; $i < 10; $i++) {
             # code...
             Pesanan::create([
-                'Kota_asal' => 'Jakarta',
+                'Kota_asal' => 'Malang',
                 'Kota_Tujuan' => 'Surabaya',
                 'jam_berangkat' => '08:00',
                 'jam_tiba' => '10:00',

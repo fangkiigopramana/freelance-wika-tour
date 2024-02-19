@@ -21,6 +21,25 @@
         .tab-content.active {
             display: block;
         }
+
+        .container {
+            max-width: 100%;
+            margin: 20px auto;
+
+            select {
+                text-align: left;
+                border: 1px solid gray;
+                padding: 4px;
+                width: 250px;
+                margin: 0 0 1rem;
+            }
+
+            .box {
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+            }
+        }
     </style>
 
     <link rel="stylesheet" href="https://cdn.datatables.net/2.0.0/css/dataTables.dataTables.css" />
