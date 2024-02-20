@@ -122,7 +122,7 @@
 <body>
     <div class="w-full">
         <div class="h-20 flex justify-between px-6 md:px-16 bg-white">
-            <p class="font-bold text-2xl my-auto">Logo</p>
+            <p class="font-bold text-2xl my-auto">Wika Tours and Travel</p>
             <div class="my-auto flex justify">
                 <form action="{{ route('landing.cart') }}">
                     <button class="mr-6">
@@ -185,7 +185,7 @@
         <footer class="py-20 px-16 xl:px-28 bg-white">
             <div class="flex md:mb-20 flex-col md:flex-row justify-between w-full">
                 <div>
-                    <p class="text-2xl font-bold mb-8">Logo</p>
+                    <p class="text-2xl font-bold mb-8">Wika Tours and Travel</p>
                     <p class="font-bold">Address:</p>
                     <p class="mb-6">Level 1, 12 Sample St, Sydney NSW 2000</p>
                     <p class="font-bold">Contact:</p>
